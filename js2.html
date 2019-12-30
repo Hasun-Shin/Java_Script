@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <script>
+        var add = function () {
+            var tag = "";
+            tag += "<ul>";
+            tag += "<li>Test</li>";
+            tag += "</ul>";
+            //document.write(tag); 덮어쓰기가 되어버림.
+            document.body.innerHTML += tag; //innerHTML은 내용물을 뽑아오는 역할도 함 
+        };
+    </script>
+</head>
+
+<body>
+    <input type="button" value="Tag Change" onclick="add()">
+</body>
+
+</html>

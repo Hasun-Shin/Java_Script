@@ -1,0 +1,22 @@
+<script>
+    var product = {
+        name: 'Google 드론',
+        kind: '드론',
+        price: 100000,
+        play: function () {
+            alert('Fly');
+        }
+    };
+    val = total=0;
+    for (var key in product) {
+        // console.log(product[key]);
+        // console.log(typeof(product[key]));
+        if(typeof(product[key])=='number'){
+            total +=product[key];
+            document.write(total);
+
+        }else if(typeof(product[key])=='function'){
+            product[key]();
+        }
+    }
+</script>
